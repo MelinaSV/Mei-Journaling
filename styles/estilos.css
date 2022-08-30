@@ -58,22 +58,33 @@ nav{
 }
 
 /*INDEX*/
-.item{
-    height: 400px;
-    width: 800px;
-    display: inline-block;
-    border: 2px solid white;
+.cuadernos{
+    display: flex;
+    flex-direction: column;
 }
-.item:hover{
+.clasicos{
+    width: 100%;
+}
+.clasicos:hover{
     transform: scale(1.1);
 }
-div .item1{
-    background-image: url(../images/clasicos.jpg);
-    background-size: cover;
+.anillados{
+    width: 100%;
 }
-div .item2{
-    background-image: url(../images/anillados.jpg);
-    background-size: cover;
+.anillados:hover{
+    transform: scale(1.1);
+}
+.agendas{
+    width: 100%;
+}
+.agendas:hover{
+    transform: scale(1.1);
+}
+.colorear{
+    width: 100%;
+}
+.colorear:hover{
+    transform: scale(1.1);
 }
 
 /*QUIÉN SOY*/
@@ -107,14 +118,9 @@ main h2{
     margin-bottom: 20px;
 }
 /*PRODUCTOS*/
-.nota{
-    text-align: center;
-    text-decoration: overline underline;
-    background-color: yellow;
-}
 table{
     margin: auto;
-    padding-top: 30px;
+    margin-top: 15px;
     text-align: center;
 }
 table th{
@@ -135,16 +141,16 @@ p{
     margin: auto;
     padding: 15px;
 }
-.grid-container{
-    display: grid;   
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    justify-items: stretch;
-    align-items: stretch;
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
-.img:hover{
-    transform: scale(1.25);
-    transition: 2s;
+.card{
+    text-align: center;
+}
+.card-img-top{
+    height: 43%;
 }
 
 /*INICIAR SESIÓN*/
@@ -247,6 +253,21 @@ footer #instagram{
     }
     header{
         height: 136px;
+    }
+    .cuadernos{
+        flex-direction: row;
+    }
+    .anillados{
+        width: 50%;
+    }
+    .clasicos{
+        width: 50%;
+    }
+    .agendas{
+        width: 50%;
+    }
+    .colorear{
+        width: 50%;
     }
     .grid-container{
         grid-template-rows: repeat(3, 220px);
