@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mei Journaling</title>
 </head>
 <body>
-    <!-- inicio encabezado -->
+    <!-- INICIO DE ENCABEZADO -->
     <header>
-        <!-- blockquote -->
-        <div class="animated-text">
-            <div class="line">Las palabras vuelan,</div>
-            <div class="line">lo escrito permanece.</div>
-            <div class="line">Titus Flavius Vespasiano</div>
-        </div>
-        <div class="logo-nav">
-             <!-- logo -->
-            <a href="./index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
-            <!-- nav/lista -->
-            <ul class="menu">
-                <li>
-                    <a href="./index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./pages/quien-soy.html">QUIÉN SOY</a>
-                </li>
-                <li>
-                    <a href="./pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./pages/iniciar-sesion.html">INICIAR SESIÓN</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+        <!-- Blockquote -->
+		<div class="animated-text">
+			<div class="line">Las palabras vuelan,</div>
+			<div class="line">lo escrito permanece.</div>
+			<div class="line">Titus Flavius Vespasiano</div>
+		</div>
+        <!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+			  <a class="navbar-brand" href="./index.html">
+				<img src="./images/logo.png" alt="" width="110px" height="110px">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+				<div class="navbar-nav">
+				  <a class="nav-link text-uppercase active" aria-current="page" href="./index.html">Inicio</a>
+				  <a class="nav-link text-uppercase" href="./pages/quien-soy.html">Quién soy</a>
+				  <a class="nav-link text-uppercase" href="./pages/productos.html">Productos</a>
+				  <a class="nav-link text-uppercase" href="./pages/iniciar-sesion.html">Iniciar sesión</a>
+				</div>
+			</div>
+		  </nav>
+	</header>
 
     <main>
-        <div class="imagenUno">
-            <img src="./images/welcomepage.JPG" class="welcomePage" alt="Welcome Page">
-        </div>
-        <div class="imagenDos">
-            <img src="./images/anillados.jpg" alt="anillados" class="anillados">
-            <img src="./images/clasicos.jpg" alt="clasicos" class="clasicos">
-        </div>
+        <div class="row">
+            <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide "></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/welcomepage.JPG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/coptaglitter.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/packaging.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/menta.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+			<section class="row">
+				<div class="col-xs-12 col-md-6 item item1"></div>
+				<div class="col-xs-12 col-md-6 item item2"></div>
+			</section>
+		</div>
     </main>
 
-    <!-- inicio de pie de página -->
-    <footer>
-        <p class="footer"> → &#x2728; Apoyá mi emprendimiento siguiéndome en las redes &#x2728; ← </p>
-        <ul id="redes">
-            <li><a href="https://www.instagram.com/mei.journaling/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/mei.journaling">Facebook</a></li>
-        </ul>
-    </footer>
+    <!-- INICIO DE PIE DE PÁGINA -->
+    <footer class="container-fluid">
+		<a href="https://www.facebook.com/mei.journaling" class="col-xs-12" id="facebook">
+			<i class="fa-brands fa-facebook"></i>
+		</a>
+		<a href="https://www.instagram.com/mei.journaling/" class="col-xs-12" id="instagram">
+			<i class="fa-brands fa-instagram"></i>
+		</a>
+		<p> → &#x2728; Apoyá mi emprendimiento siguiéndome en las redes &#x2728; ← </p>
+	</footer>
+	<a href="https://api.whatsapp.com/" id="whatsapp">
+		<i class="fa-brands fa-whatsapp"></i>
+	</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,21 +1,7 @@
-/*GENERAL DEL SITIO WEB*/
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-/*HEADER*/
-header{
-    width: 100%;
-    height: 200px;
-    background-image: url(/images/header-footer.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+/* HEADER */
 .animated-text{
     width: 100%;
     background-color: #b5c5d7;
@@ -30,7 +16,6 @@ header{
     overflow: hidden;
 }
 .line{
-    margin-top: 12px;
     text-align: center;
     line-height: 60px;
 }
@@ -60,90 +45,67 @@ header{
         margin-top: 0;
     }
 }
-.logo-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 92px;
+header{
+    padding-top: 5px;
+    margin-top: 28px;
 }
-.logo{
-    height: 100px;
-    width: 100px;
-}
-.menu{
-    height: 100px;
-    font-size: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-.menu li{
-    margin: 9px;
-}
-.menu a:hover{
-    color: #2A7D6A;
+nav{
+    height: 130px;
+    width: 100%;
+    background-image: url(../images/header-footer.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 /*INDEX*/
-.welcomePage{
-    width: 100%;
+.item{
+    height: 400px;
+    width: 800px;
+    display: inline-block;
+    border: 2px solid white;
 }
-.welcomePage:hover{
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
+.item:hover{
+    transform: scale(1.1);
 }
-.imagenDos{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+div .item1{
+    background-image: url(../images/clasicos.jpg);
+    background-size: cover;
 }
-.clasicos{
-    height: 40%;
-    width: 50%;
-}
-.clasicos:hover{
-    transform: scale(1.15);
-    transition: 2s;
-}
-.anillados{
-    height: 40%;
-    width: 50%;
-}
-.anillados:hover{
-    transform: scale(1.15);
-    transition: 2s;
+div .item2{
+    background-image: url(../images/anillados.jpg);
+    background-size: cover;
 }
 
 /*QUIÉN SOY*/
-.acercaDe{
-    margin: 20px 100px 20px 100px;
-    padding: 15px 20px 15px 20px;
-    font-size: 16px;
+.info{
+    padding-top: 20px;
+}
+div .card{
+    padding-right: 10px;
+}
+#cardText{
     text-align: center;
-    background-color: #ecf1f1;
+    font-size: 15px;
 }
-.aboutMj{
-    padding: 10px;
-}
-form{
-    padding: 10px;
+#aboutMe{
+    padding-top: 4px;
+    font-size: 18px;
+    text-align: center;
 }
 .comentarios{
-    margin: 20px 100px 20px 100px;
-    padding: 15px 20px 15px 20px;
+    padding-bottom: 20px;
+}
+main h2{
+    margin-top: 20px;
+    margin-bottom: 25px;
     text-align: center;
+    font-size: 25px;
+}
+#form{
     font-size: 16px;
-    background-color: #ecf1f1;
+    text-align: center;
+    margin-bottom: 20px;
 }
-input{
-    color: teal;
-}
-
 /*PRODUCTOS*/
 .nota{
     text-align: center;
@@ -218,62 +180,65 @@ h1{
 /*FOOTER*/
 footer{
     width: 100%;
-    height: 160px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    height: 180px;
     background-image: url(/images/header-footer.jpg);
     background-position: center;
     background-size: cover;
-
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
 }
-.footer{
-    font-style: normal;
-    font-size: 13px;
-    text-transform: uppercase;
+footer p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
     padding-top: 5px;
+    text-transform: lowercase;
 }
-a{
-    text-transform: capitalize;
-    text-decoration: none;
-    color: brown;
-}
-#redes{
-    padding-bottom: 15px;
-}
-#redes a:hover{
+footer a :hover{
     color: #2A7D6A;
 }
-
+footer #facebook{
+    color: black;
+    text-decoration: none;
+}
+footer #instagram{
+    color: black;
+    text-decoration: none;
+}
+#whatsapp{
+    height: 60px;
+    width: 60px;
+    padding: 5px 3px 0px 3px;
+    font-size: 47px;
+    line-height: 10px;
+    border-radius: 50%;    
+    background-color: green;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#whatsapp :hover{
+    transform: scale(1.25);
+}
 
 /* MEDIAQUERYS */
 @media (min-width: 480px){
     header{
-        height: 200px;
-    }
-    .logo{
-        height: 100px;
-        width: 100px;
-    }
-    .menu{
-        font-size: 14px;
-        padding: 10px;
-    }
-    .menu li{
-        margin: 10px;
+        height: 136px;
     }
     .grid-container{
         grid-template-rows: repeat(3, 150px);
     }
     footer{
-        height: 200px;
-    
+        height: 150px;
     }
-    .footer{
-        font-size: 16px;
-        padding-top: 10px;
+    footer p{
+        font-size: 18px;
     }
-    
 }
 
 @media (min-width: 700px){
@@ -281,63 +246,28 @@ a{
         height: auto;
     }
     header{
-        height: 200px;
-    }
-    .logo-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 35px;
-    }
-    .logo{
-        height: 130px;
-        width: 130px;
-    }
-    .menu{
-        align-items: center;
-        font-size: 16px;
-        padding: 23px;
-    }
-    .menu li{
-        margin: 16px;
+        height: 136px;
     }
     .grid-container{
         grid-template-rows: repeat(3, 220px);
     }
+    footer p{
+        font-size: 20px;
+    }
 }
 @media (min-width: 1024px){
     header{
-        height: 200px;
+        height: 136px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    }
-    .logo{
-        height: 150px;
-        width: 150px;
-    }
-    .menu{
-        align-items: center;
-        font-size: 17px;
-        padding: 25px;
-    }
-    .menu li{
-        margin: 20px;
-    }
+    } 
     .grid-container{
         grid-template-rows: repeat(3, 300px);
     }
-    footer{
-        height: 200px;    
-    }
-    .footer{
-        font-size: 16px;
-        padding-top: 10px;
-    }
-    #redes{
-        padding-bottom: 50px;
+    footer p{
+        font-size: 20px;
     }
 }
 
