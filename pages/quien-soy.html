@@ -26,7 +26,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 			  <a class="navbar-brand" href="../index.html">
-				<img src="../images/logo.png" alt="" width="110px" height="110px">
+				<img src="../images/logo.png" id="logo" alt="" width="110px" height="110px">
 			  </a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -45,8 +45,8 @@
     <main>
         <section class="info d-grid gap-4 container">
             <div class="row">
-              <div class="col-md-3 border">
-                <div class="card mx-auto" style="width: 18rem;">
+              <div class="col-md-3">
+                <div class="card mx-auto container">
                   <img src="../images/mei.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <p class="card-text lead" id="cardText">¡Hola! Soy Mei, sosteniendo una de mis creaciones. &#x1F496;</p>
@@ -72,10 +72,8 @@
                     <input type="text" placeholder="Escriba su apellido"> <br>
                     <label class="lead" for="">E-mail</label>
                     <input type="email" name="Email" placeholder="Ingrese su email"> <br>
-                    <label class="lead" for="">Celular</label>
-                    <input type="number" placeholder="Ingrese su celular"> <br>
                     <br>
-                    <textarea name="comentarios" id="comentarios" cols="70" rows="10"></textarea>
+                    <textarea name="comentarios" id="comentarios" cols="20" rows="10"></textarea>
                     <br>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">

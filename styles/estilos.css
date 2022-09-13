@@ -49,6 +49,10 @@ header{
     padding-top: 5px;
     margin-top: 28px;
 }
+#logo{
+    border: #dac4f7 1px solid;
+    border-radius: 50%;
+}
 nav{
     height: 130px;
     width: 100%;
@@ -94,6 +98,7 @@ nav{
 div .card{
     padding-right: 10px;
 }
+
 #cardText{
     text-align: center;
     font-size: 15px;
@@ -156,6 +161,7 @@ p{
 /*INICIAR SESIÓN*/
 .mainInicioSesion{
     height: 350px;
+    margin-bottom: 130px;
 }
 .iniciarSesion{
     padding: 30px;
@@ -164,6 +170,7 @@ p{
 button{
     color:teal;
 }
+
 /*REGISTRARSE*/
 h1{
     text-align: center;
@@ -234,7 +241,7 @@ footer #instagram{
 /* MEDIAQUERYS */
 @media (min-width: 480px){
     header{
-        height: 136px;
+        height: 135px;
     }
     .grid-container{
         grid-template-rows: repeat(3, 150px);
@@ -250,9 +257,6 @@ footer #instagram{
 @media (min-width: 700px){
     body{
         height: auto;
-    }
-    header{
-        height: 136px;
     }
     .cuadernos{
         flex-direction: row;
@@ -277,13 +281,12 @@ footer #instagram{
     }
 }
 @media (min-width: 1024px){
-    header{
-        height: 136px;
+    /* header{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    } 
+    }  */
     .grid-container{
         grid-template-rows: repeat(3, 300px);
     }
