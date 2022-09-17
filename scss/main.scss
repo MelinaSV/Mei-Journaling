@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    padding: 0px;
+    margin: 0px;
+}
+@import './secciones/barra-de-navegacion.scss';
+@import './secciones/index-main';
+@import './secciones/quien-soy-main';
+@import './secciones/productos-main';
+@import './secciones/iniciar-sesion-main';
+@import './secciones/registrarse';
+@import './secciones/footer-main';
+@import './media-querys/media-querys-main';
+
+

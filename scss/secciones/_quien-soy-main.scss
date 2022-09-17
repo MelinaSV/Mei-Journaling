@@ -1,0 +1,31 @@
+.info{
+    .row{
+        padding-top: 20px;
+        div .card{
+            padding-right: 10px;
+            #cardText{
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        #aboutMe{
+            padding-top: 4px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .comentarios{
+        padding-bottom: 20px;
+    }
+    h2{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 25px;
+    }
+    #form{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
